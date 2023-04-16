@@ -7,6 +7,8 @@ Back  |  BackLigh  |  BackDark  |  Text    |  textlig   |  textDark  |  Contrast
 #C2EFB3 |   |   |   |   |
 
 Tealblue: #00b9cc
+Photo by <a href="https://unsplash.com/@stilclassis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marissa Grootes</a> on <a href="https://unsplash.com/s/photos/book-binder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
 #965e83  #f18cd1 #ffacd7  #DFC2F2  #E8EEF2
 rgba(0, 0, 0, 60%) | rgba(150, 94, 131, 0.8) rgb(150, 94, 131) | rgba(255, 255, 255, 0.5)  rgba(255, 255, 255, 0.2)
@@ -191,6 +193,10 @@ h3 {
     width: 150px;
     height: 150px;
 }
+.back-image {
+    width: 90%;
+    border-radius: 20px;
+}
 
 .card-content {
     display: flex;
@@ -254,6 +260,9 @@ h3 {
     border: 5px double #E8EEF2;
     border-radius: 20px;
 }
+.specials-container h3 {
+    animation: flash infinite linear 8s;
+}
 .special-items-container {
     display: flex;
     gap: 13px;
@@ -280,6 +289,14 @@ h3 {
     font-family: 'Josefin Sans', sans-serif;
     text-shadow: 1px 1px #0000005a;
 }
+@keyframes flash {
+    0%   {color: #ff1b69;}
+    25%  {color: #ff0;}
+    50%  {color: #2196f3;}
+    75%  {color: #9c27b0;}
+    100% {color: #ff1b69;}
+}
+
 /* ---------------------------------------------------- */
 /* Gallery */
 
